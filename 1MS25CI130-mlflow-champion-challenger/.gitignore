@@ -1,0 +1,7 @@
+mlruns/
+mlartifacts/
+mlflow.db
+hf_models/
+__pycache__/
+*.log
+.venv/

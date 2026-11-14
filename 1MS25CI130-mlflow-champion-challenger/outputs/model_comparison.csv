@@ -1,0 +1,7 @@
+,A_distilbert-sst2,B_bert-base-sst2,B_minus_A
+accuracy,0.895,0.925,0.03
+macro_precision,0.8982,0.9254,0.0272
+macro_recall,0.895,0.925,0.03
+macro_f1,0.8948,0.925,0.0302
+avg_latency_ms,51.266,76.2333,24.9673
+total_inference_s,10.2532,15.2467,4.9935

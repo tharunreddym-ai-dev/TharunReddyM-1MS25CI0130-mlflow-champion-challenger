@@ -1,0 +1,9 @@
+sample_id,text,prediction,score,model_version,hf_model_id
+new_001,The lab demo ran smoothly and the dashboard looked brilliant.,positive,0.9994,2,textattack/bert-base-uncased-SST-2
+new_002,I waited two hours and the food arrived cold and tasteless.,negative,0.9975,2,textattack/bert-base-uncased-SST-2
+new_003,Honestly one of the most moving films I have seen this year.,positive,0.9997,2,textattack/bert-base-uncased-SST-2
+new_004,"The battery dies before lunch, what a waste of money.",negative,0.9991,2,textattack/bert-base-uncased-SST-2
+new_005,"Customer support fixed my issue in five minutes, very impressed.",positive,0.9983,2,textattack/bert-base-uncased-SST-2
+new_006,The plot drags on forever and the ending makes no sense.,negative,0.9992,2,textattack/bert-base-uncased-SST-2
+new_007,Bengaluru traffic was terrible but the concert made up for it.,positive,0.9958,2,textattack/bert-base-uncased-SST-2
+new_008,The update broke every feature I actually used.,negative,0.9936,2,textattack/bert-base-uncased-SST-2

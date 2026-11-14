@@ -1,0 +1,38 @@
+/workspace/projects/595e4074-33d3-4acb-86b6-4f1b7ad3b8e6/labenv/lib/python3.12/site-packages/mlflow/pyfunc/utils/data_validation.py:187: UserWarning: [33mAdd type hints to the `predict` method to enable data validation and automatic signature inference during model logging. Check https://mlflow.org/docs/latest/model/python_model.html#type-hint-usage-in-pythonmodel for more details.[0m
+  color_warning(
+2026/11/12 17:10:50 INFO mlflow.store.db.utils: Creating initial MLflow database tables...
+2026/11/12 17:10:50 INFO mlflow.store.db.utils: Updating database tables
+2026/11/12 17:10:51 INFO mlflow.tracking.fluent: Experiment with name '1MS25CI130-hf-sentiment-champion-challenger' does not exist. Creating a new experiment.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Evaluation set: 200 SST-2 sentences (100 positive / 100 negative) -> data/eval_inputs.csv
+
+=== A_sentiment_distilbert-sst2  (distilbert-base-uncased-finetuned-sst-2-english) ===
+  accuracy           0.8950
+  macro_precision    0.8982
+  macro_recall       0.8950
+  macro_f1           0.8948
+  avg_latency_ms     51.2660
+  total_inference_s  10.2532
+2026/11/12 17:12:05 WARNING mlflow.pyfunc: Passing a Python object as `python_model` causes it to be serialized using CloudPickle, it requires exercising caution as Python object serialization mechanisms may execute arbitrary code during deserialization.Consider using a file path (str or Path) instead. See https://mlflow.org/docs/latest/ml/model/models-from-code/ for details.
+  logged model: models:/m-b40e5cbe9a274c63a018e3643560af1f
+
+=== B_sentiment_bert-base-sst2  (textattack/bert-base-uncased-SST-2) ===
+  accuracy           0.9250
+  macro_precision    0.9254
+  macro_recall       0.9250
+  macro_f1           0.9250
+  avg_latency_ms     76.2333
+  total_inference_s  15.2467
+2026/11/12 17:12:29 WARNING mlflow.pyfunc: Passing a Python object as `python_model` causes it to be serialized using CloudPickle, it requires exercising caution as Python object serialization mechanisms may execute arbitrary code during deserialization.Consider using a file path (str or Path) instead. See https://mlflow.org/docs/latest/ml/model/models-from-code/ for details.
+  logged model: models:/m-5f4d48909ec34c6194f3f9a557fee702
+
+=== Champion-Challenger decision ===
+                   A_distilbert-sst2  B_bert-base-sst2  B_minus_A
+accuracy                      0.8950            0.9250     0.0300
+macro_precision               0.8982            0.9254     0.0272
+macro_recall                  0.8950            0.9250     0.0300
+macro_f1                      0.8948            0.9250     0.0302
+avg_latency_ms               51.2660           76.2333    24.9673
+total_inference_s            10.2532           15.2467     4.9935
+Winner: B (textattack/bert-base-uncased-SST-2) -> Challenger beats Champion by +0.0302 macro-F1 (>= 0.01)
+Disagreements between A and B: 12 of 200

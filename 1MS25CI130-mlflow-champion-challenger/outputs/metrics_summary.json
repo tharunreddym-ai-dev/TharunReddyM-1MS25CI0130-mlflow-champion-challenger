@@ -1,0 +1,32 @@
+{
+  "decision": {
+    "winner": "B",
+    "reason": "Challenger beats Champion by +0.0302 macro-F1 (>= 0.01)",
+    "delta_macro_f1": 0.0302,
+    "latency_ratio": 1.487
+  },
+  "A": {
+    "accuracy": 0.895,
+    "macro_precision": 0.8982,
+    "macro_recall": 0.895,
+    "macro_f1": 0.8948,
+    "avg_latency_ms": 51.266,
+    "total_inference_s": 10.2532,
+    "hf_model_id": "distilbert-base-uncased-finetuned-sst-2-english",
+    "run_name": "A_sentiment_distilbert-sst2",
+    "run_id": "935194156e0049b1bd19513adc520758",
+    "model_uri": "models:/m-b40e5cbe9a274c63a018e3643560af1f"
+  },
+  "B": {
+    "accuracy": 0.925,
+    "macro_precision": 0.9254,
+    "macro_recall": 0.925,
+    "macro_f1": 0.925,
+    "avg_latency_ms": 76.2333,
+    "total_inference_s": 15.2467,
+    "hf_model_id": "textattack/bert-base-uncased-SST-2",
+    "run_name": "B_sentiment_bert-base-sst2",
+    "run_id": "b57fa25ca0494abe8506dc6400dd911f",
+    "model_uri": "models:/m-5f4d48909ec34c6194f3f9a557fee702"
+  }
+}

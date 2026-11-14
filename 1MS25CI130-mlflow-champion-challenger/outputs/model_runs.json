@@ -1,0 +1,11 @@
+{
+  "A": {
+    "run_id": "935194156e0049b1bd19513adc520758",
+    "hf_model_id": "distilbert-base-uncased-finetuned-sst-2-english"
+  },
+  "B": {
+    "run_id": "b57fa25ca0494abe8506dc6400dd911f",
+    "hf_model_id": "textattack/bert-base-uncased-SST-2"
+  },
+  "winner": "B"
+}

@@ -1,0 +1,8 @@
+mlflow==3.17.2
+transformers==5.22.1
+torch==2.15.0
+pandas
+numpy
+scikit-learn
+matplotlib
+huggingface_hub

@@ -1,0 +1,13 @@
+Comparison run: 7d8b52b87f2b48bdb017e4176bbcce24  winner tag = B_bert-base-sst2
+Reason: Challenger beats Champion by +0.0302 macro-F1 (>= 0.01)
+Successfully registered model '1MS25CI130-sentiment-model'.
+2026/11/12 17:12:37 WARNING mlflow.tracking._model_registry.fluent: Run with id 935194156e0049b1bd19513adc520758 has no artifacts at artifact path 'model', registering model based on models:/m-b40e5cbe9a274c63a018e3643560af1f instead
+Created version '1' of model '1MS25CI130-sentiment-model'.
+Registered A_sentiment_distilbert-sst2      -> 1MS25CI130-sentiment-model v1
+Registered model '1MS25CI130-sentiment-model' already exists. Creating a new version of this model...
+2026/11/12 17:12:37 WARNING mlflow.tracking._model_registry.fluent: Run with id b57fa25ca0494abe8506dc6400dd911f has no artifacts at artifact path 'model', registering model based on models:/m-5f4d48909ec34c6194f3f9a557fee702 instead
+Created version '2' of model '1MS25CI130-sentiment-model'.
+Registered B_sentiment_bert-base-sst2       -> 1MS25CI130-sentiment-model v2
+
+@champion   -> v2  textattack/bert-base-uncased-SST-2
+@challenger -> v1  distilbert-base-uncased-finetuned-sst-2-english

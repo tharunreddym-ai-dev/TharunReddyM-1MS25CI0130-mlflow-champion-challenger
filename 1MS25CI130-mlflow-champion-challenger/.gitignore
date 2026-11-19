@@ -5,3 +5,7 @@ hf_models/
 __pycache__/
 *.log
 .venv/
+
+.env
+.ipynb_checkpoints/
+*.pyc

@@ -13,6 +13,9 @@ print(f"Loading {uri}")
 print(f"  -> version {mv.version} | hf_model_id = {mv.tags.get('hf_model_id')} | run = {mv.tags.get('run_name')}")
 model = mlflow.pyfunc.load_model(uri)
 
+if not os.path.exists("data/new_data.csv"):
+    sys.exit("data/new_data.csv not found-run this script from the project root")
+    
 new = pd.read_csv("data/new_data.csv")
 out = model.predict(new[["text"]])
 out.insert(0, "sample_id", new.sample_id)

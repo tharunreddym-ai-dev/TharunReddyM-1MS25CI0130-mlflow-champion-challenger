@@ -6,3 +6,5 @@ numpy
 scikit-learn
 matplotlib
 huggingface_hub
+
+#Tested with Python 3.12 on CPU(no GPU needed)

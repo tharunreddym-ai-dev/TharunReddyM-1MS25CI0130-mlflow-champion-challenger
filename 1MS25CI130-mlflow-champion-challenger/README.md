@@ -62,3 +62,9 @@ outputs/     predictions_*.csv, metrics_summary*.json, model_comparison.csv, dis
 screenshots/ MLflow runs, compare view, summary run, registry aliases, predict_from_mlflow.py terminal output
 evaluate.py, hf_wrapper.py, register_champion.py, predict_from_mlflow.py, requirements.txt, .gitignore
 ```
+
+## 8.Commit History
+1.Intial project:scripts,data,output,screenshots
+2.Updated .gitignore
+3.Documented Python version
+4.Added input file check to the prediction script
